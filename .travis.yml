@@ -43,9 +43,3 @@ before_cache:
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
-deploy:
-  provider: releases
-  api_key: "f3f5fa914e026b2312a51d2fcf650e09a37e5162"
-  skip_cleanup: true
-  on:
-    tags: true
