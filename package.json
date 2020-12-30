@@ -1,9 +1,9 @@
 {
-  "name": "helioslauncher",
+  "name": "SegaziumLauncher",
   "version": "1.9.1",
-  "productName": "Helios Launcher",
+  "productName": "Segazium Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "author": "Daniel Scalzi (https://github.com/dscalzi/) and DevBen",
   "license": "UNLICENSED",
   "homepage": "https://github.com/dscalzi/HeliosLauncher",
   "bugs": {
