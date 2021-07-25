@@ -130,7 +130,7 @@ function updateSelectedAccount(authUser){
             username = authUser.displayName
         }
         if(authUser.uuid != null){
-            document.getElementById('avatarContainer').style.backgroundImage = `url('https://crafatar.com/renders/body/${authUser.uuid}')`
+            document.getElementById('avatarContainer').style.backgroundImage = `url('https://mc-heads.net/body/${authUser.uuid}/right')`
         }
     }
     user_text.innerHTML = username
@@ -172,11 +172,6 @@ const refreshMojangStatuses = async function(){
 
         for(let i=0; i<statuses.length; i++){
             const service = statuses[i]
-
-            // Mojang API is broken for sessionserver. https://bugs.mojang.com/browse/WEB-2303
-            if(service.service === 'sessionserver.mojang.com') {
-                service.status = 'green'
-            }
 
             if(service.essential){
                 tooltipEssentialHTML += `<div class="mojangStatusContainer">
