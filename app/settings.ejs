@@ -2,18 +2,18 @@
     <div id="settingsContainerLeft">
         <div id="settingsNavContainer">
             <div id="settingsNavHeader">
-                <span id="settingsNavHeaderText">Settings</span>
+                <span id="settingsNavHeaderText">Configuration</span>
             </div>
             <div id="settingsNavItemsContainer">
                 <div id="settingsNavItemsContent">
-                    <button class="settingsNavItem" rSc="settingsTabAccount" id="settingsNavAccount" selected>Account</button>
+                    <button class="settingsNavItem" rSc="settingsTabAccount" id="settingsNavAccount" selected>Compte</button>
                     <button class="settingsNavItem" rSc="settingsTabMinecraft">Minecraft</button>
                     <button class="settingsNavItem" rSc="settingsTabMods">Mods</button>
                     <button class="settingsNavItem" rSc="settingsTabJava">Java</button>
                     <button class="settingsNavItem" rSc="settingsTabLauncher">Launcher</button>
                     <div class="settingsNavSpacer"></div>
-                    <button class="settingsNavItem" rSc="settingsTabAbout">About</button>
-                    <button class="settingsNavItem" rSc="settingsTabUpdate" id="settingsNavUpdate">Updates</button>
+                    <button class="settingsNavItem" rSc="settingsTabAbout">A propos</button>
+                    <button class="settingsNavItem" rSc="settingsTabUpdate" id="settingsNavUpdate">Mise à jour</button>
                     <div id="settingsNavContentBottom">
                         <div class="settingsNavDivider"></div>
                         <button id="settingsNavDone">Done</button>
@@ -25,16 +25,16 @@
     <div id="settingsContainerRight">
         <div id="settingsTabAccount" class="settingsTab">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Account Settings</span>
-                <span class="settingsTabHeaderDesc">Add new accounts or manage existing ones.</span>
+                <span class="settingsTabHeaderText">Paramètres du compte</span>
+                <span class="settingsTabHeaderDesc">Ajoutez de nouveaux comptes ou gérez les comptes existants.</span>
             </div>
             <div id="settingsAddAccountContainer">
                 <button id="settingsAddAccount">
-                    <span id="settingsAddAccountText">&#43; Add Account</span>
+                    <span id="settingsAddAccountText">&#43; Ajouter un compte</span>
                 </button>
             </div>
             <div id="settingsCurrentAccountsHeader">
-                <span class="settingsFieldTitle">Current Accounts</span>
+                <span class="settingsFieldTitle">Compte Actuelle</span>
             </div>
             <div id="settingsCurrentAccounts">
                 <!-- Auth accounts populated here. -->
@@ -42,11 +42,11 @@
         </div>
         <div id="settingsTabMinecraft" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Minecraft Settings</span>
-                <span class="settingsTabHeaderDesc">Options related to game launch.</span>
+                <span class="settingsTabHeaderText">Configuration de Minecraft</span>
+                <span class="settingsTabHeaderDesc">Option du lancement</span>
             </div>
             <div id="settingsGameResolutionContainer">
-                <span class="settingsFieldTitle">Game Resolution</span>
+                <span class="settingsFieldTitle">Résolution du jeu</span>
                 <div id="settingsGameResolutionContent">
                     <input type="number" id="settingsGameWidth" min="0" cValue="GameWidth">
                     <div id="settingsGameResolutionCross">&#10006;</div>
@@ -55,7 +55,7 @@
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">Launch in fullscreen.</span>
+                    <span class="settingsFieldTitle">Lancer en plein écran.</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -66,7 +66,7 @@
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">Automatically connect to the server on launch.</span>
+                    <span class="settingsFieldTitle">Connectez-vous automatiquement au serveur au lancement.</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -77,8 +77,8 @@
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">Launch game process detached from launcher.</span>
-                    <span class="settingsFieldDesc">If the game is not detached, closing the launcher will also close the game.</span>
+                    <span class="settingsFieldTitle">Lancer le processus de jeu détaché du launcheur.</span>
+                    <span class="settingsFieldDesc">Si le jeu n'est pas détaché, la fermeture du launcheur fermera également le jeu.</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -90,8 +90,8 @@
         </div>
         <div id="settingsTabMods" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Mod Settings</span>
-                <span class="settingsTabHeaderDesc">Enable or disable mods.</span>
+                <span class="settingsTabHeaderText">Config des mods</span>
+                <span class="settingsTabHeaderDesc">Activer ou désactiver les mods.</span>
             </div>
             <div id="settingsSelServContainer">
                 <div id="settingsSelServContent">
@@ -105,13 +105,13 @@
             </div>
             <div id="settingsModsContainer">
                 <div id="settingsReqModsContainer">
-                    <div class="settingsModsHeader">Required Mods</div>
+                    <div class="settingsModsHeader">Mods requis</div>
                     <div id="settingsReqModsContent">
 
                     </div>
                 </div>
                 <div id="settingsOptModsContainer">
-                    <div class="settingsModsHeader">Optional Mods</div>
+                    <div class="settingsModsHeader">Mods optionnels</div>
                     <div id="settingsOptModsContent">
                         
                     </div>
@@ -119,6 +119,7 @@
                 <div id="settingsDropinModsContainer">
                     <div class="settingsModsHeader">Drop-in Mods</div>
                     <button id="settingsDropinFileSystemButton">+ Add Mods <span id="settingsDropinRefreshNote">(F5 to Refresh)</span></button>
+                    <span class="settingsFieldTitle">L'utilisation de cheat est puni d'un BAN DEF !!</span>
                     <div id="settingsDropinModsContent">
                         
                     </div>
@@ -269,7 +270,7 @@
         </div>
         <div id="settingsTabAbout" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">About</span>
+                <span class="settingsTabHeaderText">A propos</span>
                 <span class="settingsTabHeaderDesc">View information and release notes for the current version.</span>
             </div>
             <div id="settingsAboutCurrentContainer">
@@ -291,7 +292,6 @@
                 </div>
                 <div id="settingsAboutButtons">
                     <a href="https://github.com/benjaminlecerf/Segazium-Launcher" id="settingsAboutSourceButton" class="settingsAboutButton">Source (GitHub)</a>
-                    <!-- The following must be included in third-party usage. -->
                     <a href="https://github.com/dscalzi/HeliosLauncher" id="settingsAboutSourceButton" class="settingsAboutButton">Original Source</a>
                     <a href="https://github.com/benjaminlecerf/Segazium-Launcher/issues" id="settingsAboutSupportButton" class="settingsAboutButton">Support</a>
                     <a href="#" id="settingsAboutDevToolsButton" class="settingsAboutButton">DevTools Console</a>
@@ -300,27 +300,27 @@
             <div class="settingsChangelogContainer">
                 <div class="settingsChangelogContent">
                     <div class="settingsChangelogHeadline">
-                        <div class="settingsChangelogLabel">Release Notes</div>
-                        <div class="settingsChangelogTitle">Changelog</div>
+                        <div class="settingsChangelogLabel">Notes de version</div>
+                        <div class="settingsChangelogTitle">Journal des modifications</div>
                     </div>
                     <div class="settingsChangelogText">
                         No Release Notes
                     </div>
                 </div>
                 <div class="settingsChangelogActions">
-                    <a class="settingsChangelogButton settingsAboutButton" href="#">View Release Notes on GitHub</a>
+                    <a class="settingsChangelogButton settingsAboutButton" href="#">Voir les notes de version surGitHub</a>
                 </div>
             </div>
         </div>
         <div id="settingsTabUpdate" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Launcher Updates</span>
-                <span class="settingsTabHeaderDesc">Download, install, and review updates for the launcher.</span>
+                <span class="settingsTabHeaderText">Mises à jour du launcher</span>
+                <span class="settingsTabHeaderDesc">Téléchargez, installez et examinez les mises à jour pour le launcher.</span>
             </div>
             <div id="settingsUpdateStatusContainer">
                 <div id="settingsUpdateStatusContent">
                     <div id="settingsUpdateStatusHeadline">
-                        <span id="settingsUpdateTitle">You Are Running the Latest Version</span>
+                        <span id="settingsUpdateTitle">Vous exécutez la dernière version</span>
                     </div>
                     <div id="settingsUpdateVersion">
                         <div id="settingsUpdateVersionCheck">&#10003;</div>
@@ -333,15 +333,15 @@
                         </div>
                     </div>
                     <div id="settingsUpdateActionContainer">
-                        <button id="settingsUpdateActionButton">Check for Updates</button>
+                        <button id="settingsUpdateActionButton">Vérifier les mises à jour</button>
                     </div>
                 </div>
             </div>
             <div class="settingsChangelogContainer">
                 <div class="settingsChangelogContent">
                     <div class="settingsChangelogHeadline">
-                        <div class="settingsChangelogLabel">What's New</div>
-                        <div class="settingsChangelogTitle">Update Release Notes</div>
+                        <div class="settingsChangelogLabel">Quoi de neuf</div>
+                        <div class="settingsChangelogTitle">Mettre à jour les notes de version</div>
                     </div>
                     <div class="settingsChangelogText">
                         No Release Notes

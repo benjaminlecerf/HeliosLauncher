@@ -2705,10 +2705,19 @@ input:checked + .toggleSwitchSlider:before {
     height: 70px;
     width: auto;
     position: relative;
-    border: 2px solid white;
-    box-sizing: border-box;
     border-radius: 50%;
 }
+
+#image_fond {
+    height: 250;
+    width: auto;
+    position: relative;
+    border-radius: 50%;
+    right: 0;
+    left: 100;
+    bottom: 50;
+}
+
 
 /* Logo container styles. */
 #image_seal_container {
@@ -2718,6 +2727,14 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 50%;
     margin-top: 50px;
 }
+
+#image_fond_container {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
 
 /* Logo container styles w/ update. */
 #image_seal_container[update]{
@@ -2818,7 +2835,6 @@ input:checked + .toggleSwitchSlider:before {
 /* User profile avatar container. */
 #avatarContainer {
     border-radius: 50%;
-    border: 2px solid #cad7e1;
     box-sizing: border-box;
     background: rgba(1, 2, 1, 0.5);
     height: 70px;
@@ -2953,7 +2969,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsTooltip {
     visibility: hidden;
     opacity: 0;
-    width: 75px;
+    width: 90px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
@@ -3050,7 +3066,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Maintains maximum width on the status bar. */
 #server_status_wrapper {
     display: inline-flex;
-    width: 75px;
+    width: 103px;
 }
 
 /* Span which displays the player count of the selected server. */
