@@ -1241,7 +1241,7 @@ class AssetGuard extends EventEmitter {
      */
     _getVersionDataUrl(version){
         return new Promise((resolve, reject) => {
-            request('https://launchermeta.mojang.com/mc/game/version_manifest.json', (error, resp, body) => {
+            request('http://launcher.segazium-pvp.fr/version_manifest.json', (error, resp, body) => {
                 if(error){
                     reject(error)
                 } else {
